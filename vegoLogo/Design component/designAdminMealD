@@ -1,0 +1,57 @@
+//
+//  designAdminMealD.swift
+//  vegoLogo
+//
+//  Created by Khaled Kutbi on ١٦ ذو. ق، ١٤٣٩ هـ.
+//  Copyright © ١٤٣٩ هـ Khaled Kutbi. All rights reserved.
+//
+
+import UIKit
+import Foundation
+
+class designView: UIView {
+
+   @IBInspectable var cornerRadius: CGFloat = 100
+    
+    @IBInspectable var cornerRedius: CGFloat = 0.0 {
+        
+        didSet{
+            self.layer.cornerRadius =   cornerRadius
+        }
+    }
+
+}
+
+class designLable : UILabel {
+    @IBInspectable var cornerRadius: CGFloat = 100
+    
+    @IBInspectable var cornerRedius: CGFloat = 0.0 {
+        
+        didSet{
+            self.layer.cornerRadius =   cornerRadius
+        }
+    }
+}
+
+class designButton : UIButton{
+    @IBInspectable var cornerRadius: CGFloat = 100
+    @IBInspectable var cornerRedius: CGFloat = 0.0{
+        
+        didSet{
+           self.layer.cornerRadius = cornerRadius
+            
+        }
+    }
+    
+}
+class designTableView : UITableView{
+    @IBInspectable var cornerRadius: CGFloat = 100
+    @IBInspectable var cornerRedius: CGFloat = 0.0{
+        
+        didSet{
+            self.layer.cornerRadius = cornerRadius
+            
+        }
+    }
+    
+}
